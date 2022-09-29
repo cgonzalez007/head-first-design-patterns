@@ -1,15 +1,12 @@
-using System;
+namespace SimUDuck.Ducks;
 
-namespace SimUDuck.Ducks
+public interface IDuck
 {
-    public interface IDuck
-    {
-        void Display();
+    void Display();
 
-        void PerformFly();
+    void PerformFly();
 
-        void PerformQuack();
+    void PerformQuack();
 
-        void Swim();
-    }
+    void Swim();
 }

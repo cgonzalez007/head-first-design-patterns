@@ -1,7 +1,6 @@
-namespace SimUDuck.QuackBehaviors
+namespace SimUDuck.QuackBehaviors;
+
+public interface IQuackBehavior
 {
-    public interface IQuackBehavior
-    {
-        void Quack();
-    }
+    void Quack();
 }

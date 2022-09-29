@@ -1,10 +1,7 @@
-using System;
+namespace SimUDuck.QuackBehaviors;
 
-namespace SimUDuck.QuackBehaviors
+public sealed class Squeak : IQuackBehavior
 {
-    public sealed class Squeak : IQuackBehavior
-    {
-        public void Quack()
-            => Console.WriteLine("Squeak");
-    }
+    public void Quack()
+        => Console.WriteLine("Squeak");
 }

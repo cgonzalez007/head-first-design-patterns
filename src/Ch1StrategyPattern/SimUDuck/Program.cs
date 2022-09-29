@@ -1,4 +1,6 @@
-﻿//Chapter 1 - Strategy Pattern - SimUDuck
+﻿// Chapter 1 - Strategy Pattern - SimUDuck
+// Pg 24: The strategy pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+// Strategy lets the algorithm vary independently from clients that use it.
 
 using SimUDuck.Ducks;
 using SimUDuck.FlyBehaviors;
@@ -23,3 +25,4 @@ model.PerformFly();
 model.FlyBehavior = new FlyRockedPowered();
 
 mallard.PerformFly();
+

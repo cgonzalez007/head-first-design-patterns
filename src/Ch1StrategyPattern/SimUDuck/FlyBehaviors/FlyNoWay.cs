@@ -1,10 +1,7 @@
-using System;
+namespace SimUDuck.FlyBehaviors;
 
-namespace SimUDuck.FlyBehaviors
+public sealed class FlyNoWay : IFlyBehavior
 {
-    public sealed class FlyNoWay : IFlyBehavior
-    {
-        public void Fly()
-            => Console.WriteLine("I can't fly");
-    }
+    public void Fly()
+        => Console.WriteLine("I can't fly");
 }

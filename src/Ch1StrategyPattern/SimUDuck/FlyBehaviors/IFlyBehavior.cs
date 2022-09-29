@@ -1,7 +1,6 @@
-namespace SimUDuck.FlyBehaviors
+namespace SimUDuck.FlyBehaviors;
+
+public interface IFlyBehavior
 {
-    public interface IFlyBehavior
-    {
-        void Fly();
-    }
+    void Fly();
 }

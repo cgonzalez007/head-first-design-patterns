@@ -1,10 +1,7 @@
-using System;
+namespace SimUDuck.FlyBehaviors;
 
-namespace SimUDuck.FlyBehaviors
+public sealed class FlyRockedPowered : IFlyBehavior
 {
-    public sealed class FlyRockedPowered : IFlyBehavior
-    {
-        public void Fly()
-            => Console.WriteLine("I'm flying with a rocket!");
-    }
+    public void Fly()
+        => Console.WriteLine("I'm flying with a rocket!");
 }
