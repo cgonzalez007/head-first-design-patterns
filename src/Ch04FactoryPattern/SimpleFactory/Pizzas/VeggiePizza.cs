@@ -6,6 +6,9 @@ public class VeggiePizza : Pizza
 {
     public VeggiePizza()
     {
+        Name = "Veggie Pizza";
+        Dough = "Crust";
+        Sauce = "Marinara Sauce";
         Toppings.Add("Shredded mozzarella");
         Toppings.Add("Grated parmesan");
         Toppings.Add("Diced onion");
@@ -14,9 +17,9 @@ public class VeggiePizza : Pizza
         Toppings.Add("Sliced black olives");
     }
 
-    public override string Name => "Veggie Pizza";
+    public override string Name { get; }
 
-    public override string Dough => "Crust";
+    public override string Dough { get; }
 
-    public override string Sauce => "Marinara Sauce";
+    public override string Sauce { get; }
 }

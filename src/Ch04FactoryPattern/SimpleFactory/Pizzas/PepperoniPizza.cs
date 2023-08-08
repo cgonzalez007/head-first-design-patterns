@@ -6,14 +6,17 @@ public class PepperoniPizza : Pizza
 {
     public PepperoniPizza()
     {
+        Name = "Pepperoni Pizza";
+        Dough = "Crust";
+        Sauce = "Marinara Sauce";
         Toppings.Add("Sliced Pepperoni");
         Toppings.Add("Sliced Onion");
         Toppings.Add("Grated parmesan cheese");
     }
 
-    public override string Name => "Pepperoni Pizza";
+    public override string Name { get; }
 
-    public override string Dough => "Crust";
+    public override string Dough { get; }
 
-    public override string Sauce => "Marinara Sauce";
+    public override string Sauce { get; }
 }

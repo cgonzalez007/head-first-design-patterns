@@ -6,13 +6,16 @@ public class CheesePizza : Pizza
 {
     public CheesePizza()
     {
+        Name = "Cheese Pizza";
+        Dough = "Regular Crust";
+        Sauce = "Marinara Pizza Sauce";
         Toppings.Add("Fresh Mozzarella");
         Toppings.Add("Parmesan");
     }
 
-    public override string Name => "Cheese Pizza";
+    public override string Name { get; }
 
-    public override string Dough => "Regular Crust";
+    public override string Dough { get; }
 
-    public override string Sauce => "Marinara Pizza Sauce";
+    public override string Sauce { get; }
 }
